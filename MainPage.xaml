@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="MyMoacapApp_V2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyMoacapApp_V2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="1605">
+
+    <Grid>
+        <Grid>
+            <!--Start Grid for textbloc-->
+            <GridView  HorizontalAlignment="left" VerticalAlignment="Top" Margin="0" Width="965">
+                <StackPanel x:Name="st1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="100,0,-100,0">
+                    <TextBox x:Name="MPUTxtBox1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU1" Height="150" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel x:Name="st2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="0,0,-100,0">
+                    <TextBox x:Name="MPUTxtBox2"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU2" Height="150" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel x:Name="st3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="-90,0,-100,0">
+                    <TextBox x:Name="MPUTxtBox3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU3" Height="150" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel x:Name="st4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="-60,0,-800,0">
+                    <TextBox x:Name="MPUTxtBox4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU4" Height="150" Width="250" TextWrapping="Wrap" />
+                </StackPanel>
+                <StackPanel x:Name="st5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="200" Margin="-120,0,-200,0">
+                    <TextBox x:Name="MPUTxtBox5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU5" Height="150" Width="250" TextWrapping="Wrap" Margin="25,0,25,0" d:IsLocked="True" />
+                </StackPanel>
+                <StackPanel x:Name="st6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="-120,0,-100,0">
+                    <TextBox x:Name="MPUTxtBox6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU6" Height="150" Width="250" TextWrapping="Wrap" Margin="25,0,25,0"/>
+                </StackPanel>
+                <StackPanel x:Name="st7" HorizontalAlignment="left" VerticalAlignment="Top" Width="300" Height="200" Margin="60,0,-100,0">
+                    <TextBox x:Name="MPUTxtBox7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU7" Height="150" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel x:Name="st8" HorizontalAlignment="left" VerticalAlignment="Top" Width="300" Height="200" Margin="-40,0,-100,0">
+                    <TextBox x:Name="MPUTxtBox8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU8" Height="150" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel x:Name="st9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="-30,0,0,0">
+                    <TextBox x:Name="MPUTxtBox9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" TextAlignment="Left" IsReadOnly="True" Header="MPU9" Height="150" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+
+            </GridView>
+        </Grid>
+        <!--Closing Grid for TextBox-->
+
+        <Grid>
+            <!--Start Grid for Buttons-->
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU0" x:Name="MPUBtn1" HorizontalAlignment="Left" Margin="40,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" BorderThickness="2,2,2,2" Click="MPUBtn1_Click" ClickMode="Release" Visibility="Collapsed"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU1" x:Name="MPUBtn2" HorizontalAlignment="Left" Margin="150,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn2_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU2" x:Name="MPUBtn3" HorizontalAlignment="Left" Margin="280,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn3_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU3" x:Name="MPUBtn4" HorizontalAlignment="Left" Margin="400,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn4_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU4" x:Name="MPUBtn5" HorizontalAlignment="Left" Margin="540,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn5_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU5" x:Name="MPUBtn6" HorizontalAlignment="Left" Margin="680,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn6_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU6" x:Name="MPUBtn7" HorizontalAlignment="Left" Margin="800,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn7_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU7" x:Name="MPUBtn8" HorizontalAlignment="Left" Margin="940,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn8_Click"  />
+            <Button Background="Red" Foreground="White" FontSize="22" Content="MPU8" x:Name="MPUBtn9" HorizontalAlignment="Left" Margin="1060,-60,-100,5" VerticalAlignment="Bottom" Width="80" Height="40" Click="MPUBtn9_Click"  />
+       
+
+        </Grid>
+        <!--End GridView Buttons-->
+
+    </Grid>
+</Page>
